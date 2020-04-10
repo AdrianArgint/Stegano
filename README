@@ -1,0 +1,10 @@
+Adrian Costel Argint
+323CB
+
+Task1: registrul eax este cheia si incepe de la 0. Se face decodificarea apoi se verifica prin functia check_word daca este gasit cuvantul "revient" si se intoarce prin eax 0 daca nu s-a gasit, altfel indicele de la care se gaseste cuvantul. In acest caz(s-a gasit cuvantul), se afiseaza linia incepand cu acel indice(se calculeaza numarul liniei), cheia si numarul liniei. Pentru afisarea liniei se foloseste funtia print_line care afiseaza linia data ca parametru pana la aparitia lui "/0"
+
+Task2: se apeleaza functia de la task1 pentru a afla cheia, apoi se adauga mesajul cerut pe urmatoarea linie(descoperita tot prin task1 + 1), se introduce mesajul, se afla noua cheie prin formula data dupa care se codifica imaginea cu noua cheie si se afiseaza.
+
+Task4: Cuvantul dat este impartit pe litere. Fiecarei litere i se "analizeaza" bitii. Fiecare bit este pus ca LSB pentru fiecare pixel(asa cum se cere). Pentru asta am folosit "parcurgere_cuvant" pentru fiecare litera care se gaseste in registrul bl, iar pentru fiecare litera se apeleaza "binar" care face "sau" intre pixel si 1 pentru a seta bitul la 1, respectiv "si" intre pixel si 254(in binar 11111110) pentru a seta bitul la 0. La sfarsitul cuvantului se adauga "\0" prin fucntia "adauga_zero" care face un loop de 8(8 biti) pentru a pune 0 peste tot.
+
+Task5: Invers fata de task4. Incepand cu offset - 1 se compune cate o litera(8biti) prin eticheta "litera_aux" si "litera". Daca litera are valoare 0 inseamna ca este terminator de sir. In caz contrar, se afiseaza litera si se repeta procesul.
