@@ -1,5 +1,4 @@
 Adrian Costel Argint
-323CB
 
 Task1: registrul eax este cheia si incepe de la 0. Se face decodificarea apoi se verifica prin functia check_word daca este gasit cuvantul "revient" si se intoarce prin eax 0 daca nu s-a gasit, altfel indicele de la care se gaseste cuvantul. In acest caz(s-a gasit cuvantul), se afiseaza linia incepand cu acel indice(se calculeaza numarul liniei), cheia si numarul liniei. Pentru afisarea liniei se foloseste funtia print_line care afiseaza linia data ca parametru pana la aparitia lui "/0"
 
